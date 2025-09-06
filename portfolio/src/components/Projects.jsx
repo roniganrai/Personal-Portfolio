@@ -62,7 +62,7 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="min-h-screen bg-gray-900 text-white flex flex-col items-center px-6 py-16 pb-19"
+      className="min-h-screen bg-gray-900 text-white flex flex-col items-center px-6 py-16"
     >
       {/* Heading */}
       <motion.h2
@@ -87,20 +87,19 @@ export default function Projects() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.4, delay: index * 0.1 }}
-            whileHover={{ scale: 1.05 }}
-            className="bg-gray-800 border border-gray-700 rounded-2xl overflow-hidden shadow-lg flex flex-col"
+            className="group bg-gray-800 rounded-2xl overflow-hidden shadow-lg flex flex-col"
           >
-            {/* Screenshot */}
-            <div className="h-52 w-full overflow-hidden">
+            {/* Screenshot with Zoom on Hover */}
+            <div className="h-52 w-full overflow-hidden relative">
               <img
                 src={project.screenshot}
                 alt={project.title}
-                className="object-cover w-full h-full"
+                className="object-cover w-full h-full transform transition-transform duration-500 group-hover:scale-110"
               />
             </div>
 
-            {/* Content */}
-            <div className="p-6 flex flex-col flex-grow">
+            {/* Content Box with Bottom 3-Side Outline */}
+            <div className="p-6 flex flex-col flex-grow transition-all duration-300 border-b-2 border-x-2 border-transparent group-hover:border-purple-500">
               <h3 className="text-xl font-semibold text-white">
                 {project.title}
               </h3>
