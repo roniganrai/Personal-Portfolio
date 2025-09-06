@@ -1,0 +1,33 @@
+/* Hide default cursor */
+body {
+  cursor: none;
+}
+
+/* Custom Cursor Dot */
+.cursor-dot {
+  width: 8px;
+  height: 8px;
+  background: #38bdf8; /* sky blue */
+  border-radius: 50%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+}
+
+/* Custom Cursor Outline */
+.cursor-outline {
+  width: 30px;
+  height: 30px;
+  border: 2px solid #a855f7; /* purple */
+  border-radius: 50%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 9998;
+  transition: all 0.15s ease-out;
+}
