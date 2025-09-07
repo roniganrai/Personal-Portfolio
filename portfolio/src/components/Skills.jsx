@@ -1,12 +1,21 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { FaHtml5, FaCss3Alt, FaReact, FaJava, FaGitAlt } from "react-icons/fa";
+import {
+  FaHtml5,
+  FaCss3Alt,
+  FaReact,
+  FaJava,
+  FaGitAlt,
+  FaNodeJs,
+} from "react-icons/fa";
 import {
   SiTailwindcss,
   SiMysql,
   SiMongodb,
   SiIntellijidea,
   SiGithub,
+  SiPostman,
+  SiExpress,
 } from "react-icons/si";
 import { VscVscode } from "react-icons/vsc";
 
@@ -15,6 +24,7 @@ export default function Skills() {
 
   const tabs = [
     { id: "frontend", label: "Frontend" },
+    { id: "backend", label: "Backend" },
     { id: "programming", label: "Programming" },
     { id: "databases", label: "Databases" },
     { id: "tools", label: "Tools" },
@@ -28,6 +38,16 @@ export default function Skills() {
       {
         name: "Tailwind",
         icon: <SiTailwindcss className="text-sky-400 text-5xl" />,
+      },
+    ],
+    backend: [
+      {
+        name: "Node.js",
+        icon: <FaNodeJs className="text-green-500 text-5xl" />,
+      },
+      {
+        name: "Express.js",
+        icon: <SiExpress className="text-gray-400 text-5xl" />,
       },
     ],
     programming: [
@@ -54,6 +74,10 @@ export default function Skills() {
       {
         name: "IntelliJ IDEA",
         icon: <SiIntellijidea className="text-purple-400 text-5xl" />,
+      },
+      {
+        name: "Postman",
+        icon: <SiPostman className="text-orange-500 text-5xl" />,
       },
     ],
   };
