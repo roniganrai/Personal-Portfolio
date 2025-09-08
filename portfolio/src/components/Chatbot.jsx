@@ -24,16 +24,31 @@ export default function Chatbot() {
   // ✅ Format AI response and make URLs clickable
   const formatMessage = (text) => {
     if (!text) return "";
+
+    // Trim each line and remove multiple empty lines
+    let lines = text
+      .split("\n")
+      .map((line) => line.trim())
+      .filter((line) => line !== "");
+    let cleanText = lines.join("\n");
+
     // Make links clickable
-    const linkedText = text.replace(
+    cleanText = cleanText.replace(
       /(https?:\/\/[^\s]+)/g,
       '<a href="$1" target="_blank" class="underline text-blue-400 hover:text-blue-300">$1</a>'
     );
-    return linkedText
-      .replace(/\n\s*\n/g, "<br/>")
-      .replace(/(\d+)\.\s/g, "<br/><strong>$1.</strong> ")
-      .replace(/- /g, "<br/>• ")
-      .replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>");
+
+    // Replace bullets and numbering
+    cleanText = cleanText.replace(/^(\d+)\.\s/gm, "<br/><strong>$1.</strong> ");
+    cleanText = cleanText.replace(/^- /gm, "• ");
+
+    // Bold formatting
+    cleanText = cleanText.replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>");
+
+    // Replace remaining newlines with <br/>
+    cleanText = cleanText.replace(/\n/g, "<br/>");
+
+    return cleanText;
   };
 
   const sendMessage = async () => {
@@ -52,7 +67,7 @@ export default function Chatbot() {
           messages: [
             {
               role: "system",
-              content: `You are Roni's AI assistant. If someone asks about you, say you are "Roni's AI Assistant". Use this data:\n\n**Portfolio Data:** ${JSON.stringify(
+              content: `You are Roni's AI assistant. Introduce yourself as "Roni's AI Assistant". Only answer the specific question asked, Do not add extra details unless explicitly requested. Use the following data to answer questions:Use this data:\n\n**Portfolio Data:** ${JSON.stringify(
                 portfolioData
               )}\n\nAlways respond with structured answers using bullet points or numbered lists.`,
             },
