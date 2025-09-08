@@ -34,7 +34,7 @@ export default function Experience() {
   return (
     <section
       id="experience"
-      className="min-h-screen flex flex-col items-center justify-center px-6 bg-gray-900 pt-24 pb-19"
+      className="min-h-screen flex flex-col items-center justify-center px-6 bg-gray-900 pt-24 pb-19 overflow-x-hidden"
     >
       {/* Heading */}
       <motion.h2

@@ -51,7 +51,7 @@ export default function Achievements() {
   return (
     <section
       id="achievements"
-      className="min-h-screen flex flex-col items-center justify-center px-6 bg-gray-900 pt-24 pb-24"
+      className="min-h-screen flex flex-col items-center justify-center px-6 bg-gray-900 pt-24 pb-24 overflow-x-hidden"
     >
       {/* Achievements Heading */}
       <motion.h2

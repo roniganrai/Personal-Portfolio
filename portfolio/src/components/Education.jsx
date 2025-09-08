@@ -25,7 +25,7 @@ export default function AboutEducation() {
   return (
     <section
       id="about-education"
-      className="min-h-screen flex flex-col items-center justify-center px-6 bg-gray-900 py-16 pb-19"
+      className="min-h-screen flex flex-col items-center justify-center px-6 bg-gray-900 py-16 pb-19 overflow-x-hidden"
     >
       {/* -------- About Me Section -------- */}
       <motion.h2
