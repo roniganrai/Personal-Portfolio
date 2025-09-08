@@ -106,7 +106,7 @@ export default function Skills() {
           <button
             key={tab.id}
             onClick={() => setActiveTab(tab.id)}
-            className={`px-5 py-2 font-medium relative transition-all duration-300 ${
+            className={`px-5 py-2 font-medium relative cursor-pointer transition-all duration-300 ${
               activeTab === tab.id
                 ? "text-white"
                 : "text-gray-400 hover:text-gray-200"

@@ -10,6 +10,7 @@ import Contact from "./components/Contact";
 import Experience from "./components/Experience";
 import CustomCursor from "./components/CustomCursor";
 import "./App.css";
+import Chatbot from "./components/Chatbot";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <Route path="/experience" element={<Experience />} />
       </Routes>
       <BottomNav />
+      <Chatbot />
     </Router>
   );
 }

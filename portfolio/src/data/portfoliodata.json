@@ -1,0 +1,91 @@
+{
+  "personalInfo": {
+    "name": "RONI GANRAI",
+    "phone": "+91 8768463867",
+    "email": "roniganrai2029@gmail.com",
+    "linkedin": "https://linkedin.com/in/roni-ganrai-20jun2004 ",
+    "github": "https://github.com/roniganrai ",
+    "location": "Nandara, Birbhum, West Bengal-731213"
+  },
+  "profileSummary": "B.Tech Electronics and Communication Engineering student at Heritage Institute of Technology with a strong foundation in Java, SQL, and Object-Oriented Programming (OOP). Skilled in writing clean, maintainable code with strong problem-solving abilities. Continuously improving technical skills through hands-on projects and internships.",
+  "education": [
+    {
+      "institution": "Heritage Institute of Technology",
+      "degree": "BTech- Electronics and Communication Engineering",
+      "year": "2022–2026",
+      "cgpa": "7.79/10",
+      "location": "Kolkata, West Bengal"
+    },
+    {
+      "institution": "Suri Benimadhab Institution",
+      "degree": "Higher Secondary- PCMB",
+      "year": "2020–2022",
+      "percentage": "85.6%",
+      "location": "Suri, West Bengal"
+    },
+    {
+      "institution": "Parulia Sri Ramkrishna Vidyalaya",
+      "degree": "Secondary",
+      "year": "2020",
+      "percentage": "75.71%",
+      "location": "Parulia, West Bengal"
+    }
+  ],
+  "technicalSkills": {
+    "languages": ["Java", "SQL"],
+    "webTechnologies": ["HTML", "CSS", "ReactJs", "NodeJs", "ExpressJs", "Tailwind CSS"],
+    "developerTools": ["Git", "GitHub", "VS Code", "IntelliJ Idea", "Postman"],
+    "coursework": ["Object-Oriented Programming", "Data Structures and Algorithms"]
+  },
+  "projects": [
+    {
+      "name": "Excel Analytics Platform",
+      "technologies": ["React", "JavaScript", "SheetJS (xlsx)", "REST API", "CSS"],
+      "duration": "July 2025",
+      "description": [
+        "Built React-based platform for Excel upload, parsing, and visualization.",
+        "Created frontend with React.js using reusable components and Hooks.",
+        "Integrated SheetJS and REST APIs for dynamic data handling."
+      ]
+    },
+    {
+      "name": "Weather App",
+      "technologies": ["React.js", "Tailwind CSS", "wttr.in API"],
+      "duration": "Aug 2025",
+      "description": [
+        "Developed a responsive weather application using React.js for UI, Tailwind CSS for styling, and integrated wttr.in API to fetch and display real-time weather data.",
+        "Implemented features such as city-based search, live weather updates, and a clean, mobile-friendly interface."
+      ]
+    },
+    {
+  "name": "SmartQueue",
+  "tech": ["React.js", "Node.js", "CSS"],
+  "duration": "July 2025",
+  "description": "A real-time queue management system with an admin dashboard for managing queues and a user-friendly interface."
+},
+{
+  "name": "3D_Solar_System",
+  "technologies": ["JavaScript", "Three.js", "WebGL"],
+  "duration": "July 2025 – August 2025",
+  "description": "An interactive 3D model of the solar system built using Three.js and WebGL. Users can explore planets, moons, and other celestial bodies in a visually immersive environment."
+}
+
+  ],
+  "internship": {
+    "company": "Zidio Development",
+    "duration": "June 2025– July 2025",
+    "role": "Web Developer Intern",
+    "description": [
+      "Worked in a team of 4 to develop an Excel Analytics Platform that enables users to upload and analyze Excel files.",
+      "Contributed primarily to the React.js frontend, implementing interactive dashboards, data visualization components, and a responsive UI.",
+      "Collaborated with backend developers to integrate REST APIs and ensure seamless data flow between frontend and backend."
+    ]
+  },
+  "certifications": [
+    "Java- Udemy",
+    "Coding & Problem Solving- GeeksforGeeks"
+  ],
+  "additionalInformation": {
+    "languagesKnown": ["English", "Hindi", "Bengal"]
+  }
+}
