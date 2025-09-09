@@ -59,11 +59,52 @@
       ]
     },
     {
-  "name": "SmartQueue",
-  "tech": ["React.js", "Node.js", "CSS"],
-  "duration": "July 2025",
-  "description": "A real-time queue management system with an admin dashboard for managing queues and a user-friendly interface."
+  "projectName": "SmartQueue",
+  "tagline": "A smart appointment and queue management system for seamless bookings.",
+  "description": "SmartQueue is a web-based appointment and queue management system designed to simplify service booking for users and optimize queue handling for service providers. Users can create an account, book appointments anytime, and automatically receive an estimated waiting time based on the real-time queue. Service providers can manage queues efficiently, update customer status, and ensure a smooth flow. The system also sends email notifications when the user's turn arrives.",
+  "features": {
+    "userFeatures": [
+      "User authentication with account creation and login",
+      "Option to register as a normal user or service provider",
+      "Book appointments at any time with automatic queue placement",
+      "Real-time tracking of estimated waiting time and position in the queue",
+      "Email notification when the user's turn comes"
+    ],
+    "serviceProviderFeatures": [
+      "Register as a service provider and manage queues",
+      "View and manage all appointments in real time",
+      "Update user status as 'Serving' or 'Served'",
+      "Automatic queue adjustments when a booking is canceled or completed"
+    ],
+    "automation": [
+      "Automatic calculation of estimated waiting time",
+      "Real-time sync between user and provider dashboards",
+      "Email notifications for first-in-queue users"
+    ]
+  },
+  "techStack": {
+    "frontend": ["React.js", "Tailwind CSS", "Framer Motion"],
+    "backend": ["Node.js", "Express.js"],
+    "database": ["MongoDB"],
+    "authentication": ["JWT Authentication"],
+    "emailService": ["Nodemailer"],
+    "otherTools": ["Axios", "Mongoose"]
+  },
+  "highlights": [
+    "Real-time queue management system",
+    "Automatic appointment scheduling based on availability",
+    "Email alerts for users when their turn comes",
+    "User-friendly interface with a responsive design",
+    "Seamless integration between user and provider dashboards"
+  ],
+  "status": "In Development",
+  "futureScope": [
+    "Integrate payment gateway for paid appointments",
+    "Add push notifications for better user engagement",
+    "Develop a mobile app version for iOS and Android"
+  ]
 },
+
 {
   "name": "3D_Solar_System",
   "technologies": ["JavaScript", "Three.js", "WebGL"],
