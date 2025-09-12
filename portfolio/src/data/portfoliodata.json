@@ -110,7 +110,55 @@
   "technologies": ["JavaScript", "Three.js", "WebGL"],
   "duration": "July 2025 – August 2025",
   "description": "An interactive 3D model of the solar system built using Three.js and WebGL. Users can explore planets, moons, and other celestial bodies in a visually immersive environment."
+},
+{
+  "projectName": "CollabCode Editor",
+  "tagline": "A real-time collaborative code editor with built-in chat and multi-language support.",
+  "description": "CollabCode Editor is a real-time collaborative coding platform where multiple users can join virtual rooms, write and edit code together, and run programs in multiple languages using the Judge0 API. It also features an integrated chat system and live participant tracking, making it ideal for pair programming, coding interviews, or group learning sessions.",
+  "features": {
+    "userFeatures": [
+      "Join or create coding rooms with unique room IDs",
+      "Real-time collaborative code editing with live synchronization",
+      "Integrated chat system for seamless communication",
+      "Multi-language support (JavaScript, Python, C++, Java)",
+      "Switch between light and dark themes",
+      "Live participant list with join/leave notifications"
+    ],
+    "collaborationFeatures": [
+      "Real-time editor updates shared across all participants",
+      "Cursor tracking and typing indicators for better collaboration",
+      "Room persistence with stored code and language preferences",
+      "Automatic participant updates when users join or leave"
+    ],
+    "automation": [
+      "Code execution via Judge0 API with instant output",
+      "Automatic sync of programming language across participants",
+      "Auto-removal of participants on disconnect"
+    ]
+  },
+  "techStack": {
+    "frontend": ["React.js", "Tailwind CSS"],
+    "backend": ["Node.js", "Express.js", "Socket.io"],
+    "database": ["MySQL", "Sequelize ORM"],
+    "authentication": ["JWT Authentication"],
+    "otherTools": ["Judge0 API", "UUID", "React Hot Toast"]
+  },
+  "highlights": [
+    "Real-time collaborative coding environment",
+    "Multi-language execution with Judge0 API",
+    "Integrated chat for better teamwork",
+    "Responsive UI with light/dark mode",
+    "Persistent rooms with saved code and language state"
+  ],
+  "status": "In Development",
+  "futureScope": [
+    "Add file upload/download support",
+    "Implement video/audio call integration",
+    "Add code versioning and history tracking",
+    "Develop a mobile-friendly editor interface"
+  ]
 }
+
 
   ],
   "internship": {

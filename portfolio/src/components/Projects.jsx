@@ -4,6 +4,41 @@ import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 export default function Projects() {
   const projects = [
     {
+      title: "SmartQueue",
+      description:
+        "SmartQueue is a web-based platform that allows users to track queues from home, book appointments, and monitor their live position in real-time. It simplifies queue management for both users and service providers, ensuring a smooth and efficient service experience.",
+      screenshot: "/screenshots/SmartQueue.png",
+      github: "https://github.com/roniganrai/SmartQueue",
+      live: "#",
+      tech: [
+        "React",
+        "Node.js",
+        "Express",
+        "Socket.io",
+        "MongoDB",
+        "Tailwind CSS",
+      ],
+    },
+    {
+      title: "CollabCode Editor",
+      description:
+        "A real-time collaborative code editor with built-in chat, syntax highlighting, and multi-language execution powered by Judge0 API. Users can join rooms, write and run code together, and communicate seamlessly.",
+      screenshot: "/screenshots/Collabcode.png",
+      github: "https://github.com/roniganrai/CollabCode",
+      live: "https://colabcodeeditor.netlify.app/",
+      tech: [
+        "React",
+        "Node.js",
+        "Express",
+        "Socket.io",
+        "MySQL",
+        "Sequelize",
+        "Tailwind CSS",
+        "Judge0 API",
+      ],
+    },
+
+    {
       title: "Excel Analytics Platform",
       description:
         "A powerful MERN Stack platform for analyzing and visualizing spreadsheet data.",
@@ -11,15 +46,6 @@ export default function Projects() {
       github: "https://github.com/roniganrai/excel-analytics-platform",
       live: "https://excel-web-platform.netlify.app/",
       tech: ["React", "MongoDB", "Express", "Node.js", "Tailwind CSS"],
-    },
-    {
-      title: "SmartQueue",
-      description:
-        "Track queues from home, book appointments, and see your live position in the queue.",
-      screenshot: "/screenshots/SmartQueue.png",
-      github: "https://github.com/roniganrai/SmartQueue",
-      live: "#",
-      tech: ["React", "Node.js", "Express", "MongoDB", "Tailwind CSS"],
     },
     {
       title: "Personal Portfolio",

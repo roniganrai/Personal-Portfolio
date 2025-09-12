@@ -16,8 +16,15 @@ import {
   SiGithub,
   SiPostman,
   SiExpress,
+  SiSocketdotio,
+  SiSequelize,
+  SiJsonwebtokens,
+  SiNetlify,
+  SiRailway,
+  SiFramer,
 } from "react-icons/si";
 import { VscVscode } from "react-icons/vsc";
+import { SiCplusplus } from "react-icons/si";
 
 export default function Skills() {
   const [activeTab, setActiveTab] = useState("frontend");
@@ -39,6 +46,10 @@ export default function Skills() {
         name: "Tailwind",
         icon: <SiTailwindcss className="text-sky-400 text-5xl" />,
       },
+      {
+        name: "Framer Motion",
+        icon: <SiFramer className="text-pink-400 text-5xl" />,
+      },
     ],
     backend: [
       {
@@ -49,6 +60,18 @@ export default function Skills() {
         name: "Express.js",
         icon: <SiExpress className="text-gray-400 text-5xl" />,
       },
+      {
+        name: "Socket.io",
+        icon: <SiSocketdotio className="text-white text-5xl" />,
+      },
+      {
+        name: "Sequelize ORM",
+        icon: <SiSequelize className="text-blue-400 text-5xl" />,
+      },
+      {
+        name: "JWT Auth",
+        icon: <SiJsonwebtokens className="text-yellow-400 text-5xl" />,
+      },
     ],
     programming: [
       { name: "Java", icon: <FaJava className="text-red-500 text-5xl" /> },
@@ -56,6 +79,7 @@ export default function Skills() {
         name: "SQL",
         icon: <SiMysql className="text-blue-400 text-5xl" />,
       },
+      { name: "C++", icon: <SiCplusplus className="text-blue-500 text-5xl" /> },
     ],
     databases: [
       { name: "MySQL", icon: <SiMysql className="text-blue-400 text-5xl" /> },
@@ -79,13 +103,21 @@ export default function Skills() {
         name: "Postman",
         icon: <SiPostman className="text-orange-500 text-5xl" />,
       },
+      {
+        name: "Netlify",
+        icon: <SiNetlify className="text-green-400 text-5xl" />,
+      },
+      {
+        name: "Railway",
+        icon: <SiRailway className="text-indigo-400 text-5xl" />,
+      },
     ],
   };
 
   return (
     <section
       id="skills"
-      className="min-h-screen flex flex-col bg-gray-900 text-white pt-24 px-6"
+      className="min-h-screen flex flex-col bg-gray-900 text-white pt-24 px-6 py-16 overflow-x-hidden"
     >
       {/* Heading */}
       <motion.h2
@@ -132,8 +164,8 @@ export default function Skills() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: index * 0.1 }}
             whileHover={{ scale: 1.08 }}
-            className="relative bg-white/5 backdrop-blur-lg border border-gray-700 rounded-2xl 
-                       flex flex-col items-center justify-center p-6 shadow-lg 
+            className="relative bg-white/5 backdrop-blur-lg border border-gray-700 rounded-2xl
+                       flex flex-col items-center justify-center p-6 shadow-lg
                        transition-all duration-300 group"
           >
             {/* Icon glow on hover */}
