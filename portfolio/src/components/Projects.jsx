@@ -53,7 +53,7 @@ export default function Projects() {
         "A responsive personal portfolio showcasing my skills, projects, and achievements.",
       screenshot: "/screenshots/portfolio.png",
       github: "https://github.com/roniganrai/Personal-Portfolio",
-      live: "#",
+      live: "https://roniganrai.netlify.app/",
       tech: ["React", "Framer Motion", "Tailwind CSS"],
     },
     {
